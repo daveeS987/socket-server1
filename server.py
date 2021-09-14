@@ -14,7 +14,8 @@ def connect(sid, environ):
 
 @sio.event
 def message(sid, data):
-    print("Message from client: ", data)
+    print("Message: ", data)
+    sio.emit("receive", data, skip_sid=sid)
 
 
 @sio.event

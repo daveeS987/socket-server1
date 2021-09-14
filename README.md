@@ -4,6 +4,7 @@
 
 ## Links & Resources
 
+- [Repo to Connected Socket Io Clients](https://github.com/daveeS987/socket-client1)
 - [Python Socket Io](https://python-socketio.readthedocs.io/en/latest/server.html)
 - [Eventlet/Gunicorn Issues](https://github.com/eventlet/eventlet/issues/702)
 - [Miguel Grinberge Youtube](https://www.youtube.com/playlist?list=PLCuWRxjbgFnPZTBMYbz9UNGvTLNggRMjb)
@@ -20,7 +21,8 @@ A socket IO server
 
 ## Getting Started
 
-- clone repo
+- Clone repo
+- `poetry shell`
 - `poetry install`
 
 ### How to run server locally
@@ -33,5 +35,11 @@ gunicorn -k eventlet -w 1 --reload server:app
 
 ## Deploy To Heroku Notes
 
-- Need Procfile
+- Make sure to have Procfile
 - Need requirements.txt
+- Add heroku/python buildpack in settings
+
+Heroku cli commands:
+
+- heroku login
+- heroku logs --tail --app basic-socket-io-server
