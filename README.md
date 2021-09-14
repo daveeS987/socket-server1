@@ -17,3 +17,21 @@ A socket IO server
 - Gunicorn
 - Eventlet
 - Python Socket IO
+
+## Getting Started
+
+- clone repo
+- `poetry install`
+
+### How to run server locally
+
+- Run the following command in terminal
+
+```iterm
+gunicorn -k eventlet -w 1 --reload server:app
+```
+
+## Deploy To Heroku Notes
+
+- Need Procfile
+- Need requirements.txt
