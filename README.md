@@ -11,7 +11,7 @@
 
 ## Overview
 
-A socket IO server
+A basic python socket IO server
 
 ## Tools & Dependencies
 
@@ -21,7 +21,7 @@ A socket IO server
 
 ## Getting Started
 
-Enter the following into terminal and hit enter
+### 1. Enter the following into terminal and hit enter
 
 ```iterm
 git clone https://github.com/daveeS987/socket-server1.git
@@ -29,13 +29,15 @@ cd socket-server1
 poetry shell
 ```
 
-Once Shelled up, install dependencies
+### 2. Once shelled up, install dependencies
 
-- `poetry install`
+```iterm
+poetry install
+```
 
 ### How to run server locally
 
-- Run the following command in terminal
+Run the following command in terminal:
 
 ```iterm
 gunicorn -k eventlet -w 1 --reload server:app
@@ -50,4 +52,4 @@ gunicorn -k eventlet -w 1 --reload server:app
 Heroku cli commands:
 
 - heroku login
-- heroku logs --tail --app basic-socket-io-server
+- heroku logs --tail --app NAME_OF_APP
