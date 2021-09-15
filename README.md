@@ -21,8 +21,16 @@ A socket IO server
 
 ## Getting Started
 
-- Clone repo
-- `poetry shell`
+Enter the following into terminal and hit enter
+
+```iterm
+git clone https://github.com/daveeS987/socket-server1.git
+cd socket-server1
+poetry shell
+```
+
+Once Shelled up, install dependencies
+
 - `poetry install`
 
 ### How to run server locally
